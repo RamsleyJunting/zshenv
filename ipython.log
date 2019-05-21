@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/liliang/.local/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 10, in <module>
+    import sqlite3
+  File "/home/liliang/.local/python3/lib/python3.7/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/home/liliang/.local/python3/lib/python3.7/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/liliang/.local/bin/jupyter-notebook", line 6, in <module>
+    from notebook.notebookapp import main
+  File "/home/liliang/.local/lib/python3.7/site-packages/notebook/notebookapp.py", line 86, in <module>
+    from .services.sessions.sessionmanager import SessionManager
+  File "/home/liliang/.local/lib/python3.7/site-packages/notebook/services/sessions/sessionmanager.py", line 13, in <module>
+    from pysqlite2 import dbapi2 as sqlite3
+ModuleNotFoundError: No module named 'pysqlite2'
